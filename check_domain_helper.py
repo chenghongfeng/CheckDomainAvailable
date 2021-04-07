@@ -1,5 +1,7 @@
 import os
 
+def main():
+    write_pinyin_file("PinyinsDomian.txt")
 #读取拼音文件将所有可能的域名写入到指定文件中
 def write_pinyin_file(file_name):
     pinyin_source_file = open("拼音组合.txt",encoding="UTF-8")
@@ -32,4 +34,4 @@ def write_pinyin_file(file_name):
             #         print(domian_name)
 
 if __name__=='__main__':
-    write_pinyin_file("PinyinsDomian.txt")
+    main()
